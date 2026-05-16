@@ -17,7 +17,7 @@
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Tecnología | Descripción |
 |-----------|-------------|
@@ -107,7 +107,7 @@ npm install
 ```
 ---
 
-## 🗄️ Configurar la base de datos
+## Configurar la base de datos
 
 Abre el archivo `.env` y configura tu conexión.
 
