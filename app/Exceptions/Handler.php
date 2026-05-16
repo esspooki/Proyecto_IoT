@@ -8,7 +8,7 @@ use Throwable;
 class Handler extends ExceptionHandler
 {
     /**
-     * A list of the exception types that are not reported.
+     * Lista de excepciones que no se reportarán.
      *
      * @var string[]
      */
@@ -17,7 +17,7 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * A list of the inputs that are never flashed for validation exceptions.
+     * Lista de entradas que no se incluirán en los mensajes de error para la validación de excepciones.
      *
      * @var string[]
      */
@@ -28,7 +28,7 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * Register the exception handling callbacks for the application.
+     * Registra los manejadores de excepciones para la aplicación.
      *
      * @return void
      */

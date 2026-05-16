@@ -12,13 +12,14 @@ class InfoUserController extends Controller
 {
 
     public function create()
-    {
+    {   
+        //Función para mostrar la vista del perfil del usuario, se obtiene la información del usuario autenticado y se pasa a la vista para mostrarla.
         return view('laravel-examples/user-profile');
     }
 
     public function store(Request $request)
     {
-
+        //Función para actualizar la información del usuario, se validan los datos ingresados, se actualiza la información en la base de datos y se redirige al perfil del usuario con un mensaje de éxito.
         $attributes = request()->validate([
             'name' => ['required', 'max:50'],
             'email' => ['required', 'email', 'max:50', Rule::unique('users')->ignore(Auth::user()->id)],

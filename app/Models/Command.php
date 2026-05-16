@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Command extends Model
 {
+    //Modelo para representar los comandos enviados a los sensores, con campos para el ID del sensor, tipo de comando, valor del comando, estado del comando y fecha de ejecución.
     use HasFactory;
     protected $fillable = [
         'sensor_id',

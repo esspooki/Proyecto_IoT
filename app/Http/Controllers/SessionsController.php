@@ -10,11 +10,13 @@ class SessionsController extends Controller
 {
     public function create()
     {
+        //Función para mostrar la vista de inicio de sesión, se retorna la vista correspondiente.
         return view('session.login-session');
     }
 
     public function store(Request $request)
     {
+        //Función para manejar el proceso de inicio de sesión, se validan las credenciales ingresadas, se intenta iniciar sesión y se redirige al dashboard con un mensaje de éxito o se regresa con un error si las credenciales son incorrectas.
         $attributes = $request->validate(
             [
                 'email' => [
@@ -55,7 +57,7 @@ class SessionsController extends Controller
 
     public function destroy(Request $request)
     {
-
+        //Función para manejar el proceso de cierre de sesión, se cierra la sesión, se invalida la sesión actual y se regenera el token CSRF, luego se redirige al login con un mensaje de éxito.
         Auth::logout();
 
         $request->session()->invalidate();

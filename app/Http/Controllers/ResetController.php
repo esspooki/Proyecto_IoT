@@ -16,6 +16,7 @@ class ResetController extends Controller
 
     public function sendEmail(Request $request)
     {
+        //Función para enviar el correo de recuperación de contraseña, se valida el email ingresado, se envía el enlace de recuperación y se redirige con un mensaje de éxito o error. Si la aplicación está en modo demo, se muestra un mensaje indicando que no se puede recuperar la contraseña.
         if(env('IS_DEMO'))
         {
             return redirect()->back()->withErrors(['msg2' => 'You are in a demo version, you can\'t recover your password.']);

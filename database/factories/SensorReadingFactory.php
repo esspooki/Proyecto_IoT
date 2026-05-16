@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SensorReadingFactory extends Factory
 {
+    //Esta factory se utiliza para generar datos de prueba para el modelo SensorReading, creando registros con valores aleatorios para el ID del sensor, temperatura, humedad, luz, estado del riego, estado de la luz y estado de la ventilación.
     public function definition(): array
     {
         return [

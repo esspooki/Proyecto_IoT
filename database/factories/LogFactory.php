@@ -7,6 +7,7 @@ use App\Models\Log;
 
 class LogFactory extends Factory
 {
+    //Esta factory se utiliza para generar datos de prueba para el modelo Log, creando registros con valores aleatorios para el ID del sensor, tipo de evento, icono, mensaje y nivel de severidad.
     protected $model = Log::class;
 
     public function definition(): array

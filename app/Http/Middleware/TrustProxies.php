@@ -8,14 +8,14 @@ use Illuminate\Http\Request;
 class TrustProxies extends Middleware
 {
     /**
-     * The trusted proxies for this application.
+     * Los proxies que se deben confiar, puede ser un array de IPs o el valor '*' para confiar en todos los proxies.
      *
      * @var array|string|null
      */
     protected $proxies;
 
     /**
-     * The headers that should be used to detect proxies.
+     * Los encabezados que se deben usar para detectar proxies confiables, por defecto se usan los encabezados estándar de Laravel para proxies.
      *
      * @var int
      */

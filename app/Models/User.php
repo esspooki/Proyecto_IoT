@@ -10,6 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+    //Modelo para representar a los usuarios del sistema, con campos para el nombre, correo electrónico, contraseña, número de teléfono, ubicación y una breve descripción personal.
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
