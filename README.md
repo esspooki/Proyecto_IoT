@@ -31,7 +31,7 @@
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```bash
 app/
